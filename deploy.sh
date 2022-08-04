@@ -21,8 +21,8 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
+git branch -M main
  git push -f git@github.com:aminzi7/learn-vim.git main:gh-pages
-
 #  cd ../../../ && rm -rf docs/.vitepress/dist
 
 cd -
