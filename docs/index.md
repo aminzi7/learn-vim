@@ -18,9 +18,9 @@ hero:
 
 features:
   - title: "入门：从零开始 🐏"
-    details: Feel the speed of Vite. Instant server start and lightning fast HMR that stays fast regardless of the app size.
+    details: 零基础开始学习，一步一步成长，前面的困难期，切忌操之过急。
   - title: 效率：提高开发效率 🕑
-    details: With Markdown-centered content, it's built to help you focus on writing and deployed with minimum configuration.
+    details: 开发的时候，减少重复的劳动工作，节省时间，提高自己的开发效率。
   - title: 实战：开发中频繁使用 🧑‍💻
-    details: Enhance your content with all the features of Vue in Markdown, while being able to customize your site with Vue.
+    details: 结合自己的实际的开发，并使用 Vim，这就是你需要做的实战训练。
 ---
