@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/aminzi7/exercise-vim.git",
-  "author": "Aminzy <d1243410203@163.com>",
+  "author": "aminzi7",
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.4",
