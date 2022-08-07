@@ -15,7 +15,8 @@ export default [
       { text: '掌握可视化模式', link: `${commonPath}/day05` },
       { text: '掌握文本对象', link: `${commonPath}/day06` },
       { text: '在单⽂件中移动的更快', link: `${commonPath}/day07` },
-      { text: '掌握搜索', link: `${commonPath}/day08` }
+      { text: '掌握搜索', link: `${commonPath}/day08` },
+      { text: '想去哪⾥就去哪⾥', link: `${commonPath}/day09` }
     ]
   }
 ]
