@@ -19,7 +19,7 @@
 `esc` 这个按键比较远，所以可以改键。（看你的需求）
 
 
-vscode 环境, `ctrl shift p` 打开 `settings`
+vscode 编辑器, `ctrl shift p` 打开 `open user settings.json`
 
 ```json
 "vim.insertModeKeyBindings": [
@@ -33,9 +33,9 @@ vscode 环境, `ctrl shift p` 打开 `settings`
 
 ### 在 `vim` 终端退出
 
-- 保存并退出 `:wq`
+- `:wq` 保存并退出
 
-- 强制退出，不保存 `:q!`
+- `:q!` 强制退出，不保存
 
 
 ## 使用软件改建
