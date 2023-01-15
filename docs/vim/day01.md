@@ -10,8 +10,12 @@
 ### insert 模式
 
 是平时的输入法输入文字
+- `i` 光标前插入
+- `a` 光标后插入
 
-退出insert模式 `esc`  或者 `ctrl + [`
+退出insert模式 
+- `esc`  
+-  `ctrl + [` 建议这个，手部移动范围小
 
 
 ### 使用 `vim 插件` vscode 中改键
@@ -23,8 +27,9 @@ vscode 编辑器, `ctrl shift p` 打开 `open user settings.json`
 
 ```json
 "vim.insertModeKeyBindings": [
+    // 修改推出 insert 模式
     {
-        "before": ["j", "j"],
+        "before": ["j", "j"], // 或者 j k
         "after": ["<Esc>"]
     },
 
@@ -46,6 +51,20 @@ vscode 编辑器, `ctrl shift p` 打开 `open user settings.json`
 
 - 使用：[powertoys](https://docs.microsoft.com/zh-cn/windows/powertoys/keyboard-manager )
 - 安装：[github - powertoys](https://github.com/microsoft/PowerToys)
+
+## 配置快速移动
+mac
+- https://github.com/VSCodeVim/Vim#mac
+```
+$ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
+$ defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
+$ defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false         # For VS Codium
+$ defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
+$ defaults delete -g ApplePressAndHoldEnabled                                           # If necessary, reset global default
+```
+打开键盘
+
+![mac键盘](/public/mac_jianpan.png)
 
 ## win
 - window 环境下 `crtl` + `[` 没反应
