@@ -16,13 +16,22 @@
 
 ## 操作符 + 动作
 
-- 动作 就是 `hjkl`、 `^`、 `g_`  、`$` `0`
+- 动作 就是 `hjkl`、 `^ / H`、 `g_ / L`  、`$` `0`
 
 `操作符` 配合 `动作` 需要设置的配置
 
+## 组合
+`dl`
+`dL`
+`d$`
+
+`dh`
+`dH`
+`d0`
 
 ```json
 "vim.operatorPendingModeKeyBindings":[
+  // operator 模式
   // 行首
   {
     "before":["H"],
