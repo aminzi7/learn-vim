@@ -2,7 +2,9 @@
 
 ## `vim-easymotion`
 
-### 基于单词来匹配
+`"vim.easymotion":true`
+
+### 基于单词来匹配【常用】
 
 比较常用的指令
 
@@ -14,8 +16,6 @@
 
 `<leader><leader> ge`
 
-
-
 ### 基于单词的前后匹配
 
 可以匹配 `开头` 、`结尾` 、`大小写` 、 `_` 、 `#`
@@ -26,23 +26,18 @@
 
 `<leader><leader> h` 往上匹配
 
+### 基于行来跳转【常用】
 
+`<leader><leader> j`
 
-### 基于行来跳转
-
-`<leader><leader> j` 
-
-`<leader><leader> k` 
-
-
+`<leader><leader> k`
 
 ### 匹配所有
 
 `<leader><leader> <leader> j` 全部显示
 
+### `<leader>` 是反斜杠 \ 的意思
 
-
-### `<leader>`  是反斜杠 \ 的意思
 配置
 
 ```js
@@ -50,15 +45,11 @@
 "vim.leader": "<Space>",
 ```
 
-
-
 ## `vim-sneak`
 
-与 `f` 功能搜索优点类似，只不过是 `f` 搜索到是基于行内跳转。
+与 `f` 功能搜索优点类似，只不过是 `f` 搜索到是基于行内跳转，而 `sneak` 能够全局跳转
 
-而 `sneak` 能够全局跳转
-
-`sneak` 是两个字符的跳转
+`sneak` 是根据两个字符的跳转，这是一个比较精准的跳转
 
 开启 `sneak`
 
@@ -68,11 +59,9 @@
 
 开启后
 
-按 `s` 来进行搜索，`； ` 搜索下一个， `，` 搜索上一个
+按 `s` 来进行搜索，`;` 搜索下一个， `,` 搜索上一个
 
-按 `S` 来进行向上搜索。
-
-
+按 `S` 来进行向上搜索，类似 `F`
 
 因为 `f` 与 `s` 的搜索重复，做一些合并。
 
@@ -81,6 +70,7 @@
 配置修改
 
 ```js
+// 注意的是非递归
 "vim.normalModeKeyBindingsNonRecursive": [
   {
     "before":["f"],
@@ -102,21 +92,26 @@
 ```
 
 可视化模式的配置
+
 ```js
+// 非递归
 "vim.visualModeKeyBindingsNonRecursive": [
   {
     "before":["f"],
     "after":["s"]
   },
-  {
-    "before":["F"],
-    "after":["S"]
-  },
+  // 可视化模式没 F,所以不用替换
+  //{
+    //"before":["F"],
+    //"after":["S"]
+  //},
 ],
 ```
 
 合并键位
+
 ```js
+// 非递归
 "vim.operatorPendingModeKeyBindingsNonRecursive": [
   {
     "before":["f"],
