@@ -20,6 +20,7 @@ export default [
       { text: "数字和点", link: `${commonPath}/day10` },
       { text: "多文件之间跳转", link: `${commonPath}/day11` },
       { text: "处理包裹字符的符号", link: `${commonPath}/day12` },
+      { text: "替换字符", link: `${commonPath}/day13` },
     ],
   },
 ];
