@@ -22,6 +22,7 @@ export default [
       { text: "处理包裹字符的符号", link: `${commonPath}/day12` },
       { text: "替换字符", link: `${commonPath}/day13` },
       { text: "掌握悬浮显示&大小写&注释", link: `${commonPath}/day14` },
+      { text: "掌握窗口的管理", link: `${commonPath}/day15` },
     ],
   },
 ];
