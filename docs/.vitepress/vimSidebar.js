@@ -23,6 +23,7 @@ export default [
       { text: "替换字符", link: `${commonPath}/day13` },
       { text: "掌握悬浮显示&大小写&注释", link: `${commonPath}/day14` },
       { text: "掌握窗口的管理", link: `${commonPath}/day15` },
+      { text: "删除函数", link: `${commonPath}/day16` },
     ],
   },
 ];
