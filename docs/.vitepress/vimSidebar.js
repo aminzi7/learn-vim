@@ -24,7 +24,8 @@ export default [
       { text: "掌握悬浮显示&大小写&注释", link: `${commonPath}/day14` },
       { text: "掌握窗口的管理", link: `${commonPath}/day15` },
       { text: "删除函数", link: `${commonPath}/day16` },
-      { text: "删除函数", link: `${commonPath}/day17` },
+      { text: "宏", link: `${commonPath}/day17` },
+      { text: "调用 vscode 的命令", link: `${commonPath}/day18` },
     ],
   },
 ];
